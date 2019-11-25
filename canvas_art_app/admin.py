@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import Category, Paintings, ArtistName
 
-# Register your models here.
+admin.site.register([Category, Paintings, ArtistName])
