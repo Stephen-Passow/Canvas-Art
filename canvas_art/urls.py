@@ -17,8 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib import admin
+from django.urls import path
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('api/v1/', include('canvas_art_app.urls'))
+    path('api/v1/', include('canvas_art_app.urls'))
 ]
