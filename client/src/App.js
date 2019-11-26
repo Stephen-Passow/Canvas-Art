@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import "./App.css"
 import axios from 'axios'
 import HomePage from './components/HomePage';
+import Paintings from './components/Paintings';
+import Artist from './components/Artist';
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <h1>Canvas Art!</h1>
-        <HomePage />
-      </div>
+      {/* <NavBar /> */}
+
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/paintings/:id' component={Paintings} />
+        <Route exact path='/Artist' component={Artist} />
+      </Switch>
+
     </Router>
   );
 }

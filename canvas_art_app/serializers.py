@@ -6,7 +6,7 @@ from .models import Category, ArtistName, Paintings
 class PaintingsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Paintings
-        fields = ('name', 'description', 'image', 'category')
+        fields = ('id', 'name', 'description', 'image', 'category')
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -14,10 +14,10 @@ class CategorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Category
-        fields = ('name', 'paintings')
+        fields = ('id', 'name', 'paintings')
 
 
 class ArtistNameSerializer(serializers.ModelSerializer):
     class Meta:
         model = ArtistName
-        fields = ('name', 'photo_url', 'email', 'about_me')
+        fields = ('id', 'name', 'photo_url', 'email', 'about_me')
