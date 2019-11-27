@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
-export default class Paintings extends Component {
+export default class SinglePaintings extends Component {
     state = {
         name: '',
         description: '',

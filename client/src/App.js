@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import "./App.css"
 import axios from 'axios'
 import HomePage from './components/HomePage';
-import Paintings from './components/Paintings';
+import SinglePaintings from './components/SinglePaintings';
 import Artist from './components/Artist';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
 
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route exact path='/paintings/:id' component={Paintings} />
+        <Route exact path='/paintings/:id' component={SinglePaintings} />
         <Route exact path='/Artist' component={Artist} />
         
       </Switch>
