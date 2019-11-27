@@ -1,11 +1,12 @@
 .App {
   text-align: center;
   background: url(https://github.com/Stephen-Passow/Canvas-Art/blob/master/client/images/sketching-background.jpg?raw=true) no-repeat;
-  background-size: cover;
-  height: 900px;
   background-color: rgba(255,255,255,0.75);
   background-blend-mode: lighten;
   margin: 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 .artistPage {
   text-align: center;
@@ -15,4 +16,8 @@ h1 {
 }
 .contactForm {
   font-size: 20px;
+}
+.images {
+  height: 400px;
+  width: 400px;
 }

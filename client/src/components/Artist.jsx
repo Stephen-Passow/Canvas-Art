@@ -1,6 +1,19 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 export default class Artist extends Component {
+    state = {
+        email: ''
+    }
+    addNewEmail = (e) => {
+        const addEmail = {
+            email: this.state.email,
+        }
+        axios.post('/api/v1', addEmail)
+            .then((res) => {
+                res.json(res.data)
+            })
+    }
 
     render() {
         return (
@@ -14,7 +27,7 @@ export default class Artist extends Component {
                 </p>
                 <br></br>
                 <h4>Connect with me!</h4>
-                <form className="contactForm">
+                <form className="contactForm" onChange={this.addNewEmail}>
                     <input type="email" placeholder="Email Address" />
                 </form>
             </div>

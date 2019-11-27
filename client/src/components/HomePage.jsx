@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
+
 export default class HomePage extends Component {
     state = {
         paintings: []
@@ -15,9 +16,10 @@ export default class HomePage extends Component {
     }
     render() {
         return (
+            
             <div className="App">
                 <h1>Canvas art by Leidy</h1>
-                
+
                 {this.state.paintings.map((painting) => {
                     return (
                         <div key={painting.id}>
@@ -25,7 +27,7 @@ export default class HomePage extends Component {
                             <h2>{painting.name}</h2>
 
                             <Link to="/Artist">
-                                 <img src={painting.image} 
+                                 <img className="images" src={painting.image} 
                                   /> 
                                   </Link>
 

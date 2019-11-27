@@ -5,11 +5,14 @@ import axios from 'axios'
 import HomePage from './components/HomePage';
 import SinglePaintings from './components/SinglePaintings';
 import Artist from './components/Artist';
+import Header from './components/Header'
+
+
 
 function App() {
   return (
     <Router>
-      {/* <NavBar /> */}
+      <Header />
 
       <Switch>
         <Route exact path='/' component={HomePage} />
