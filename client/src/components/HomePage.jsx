@@ -16,17 +16,23 @@ export default class HomePage extends Component {
     render() {
         return (
             <div className="App">
-                <h1>Canvas Art!</h1>
+                <h1>Canvas art by Leidy</h1>
 
                 {this.state.paintings.map((painting) => {
                     return (
                         <div key={painting.id}>
+
                             <h2>{painting.name}</h2>
                             <img src={painting.image} />
                             <p>{painting.description}</p>
+                            
                         </div>
                     )
                 })}
+                <Link to ="/Artist"><button>
+                    Meet the Artist!
+                    </button>
+                    </Link>
             </div>
         )
     }

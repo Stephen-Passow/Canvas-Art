@@ -22,6 +22,8 @@ export default class Paintings extends Component {
             <div>
                 <h1>{name}</h1>
                 <h4>{description}</h4>
+                <p>{image}</p>
+                <p>{category}</p>
             </div>
         )
     }

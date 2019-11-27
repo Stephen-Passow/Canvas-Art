@@ -15,6 +15,7 @@ function App() {
         <Route exact path='/' component={HomePage} />
         <Route exact path='/paintings/:id' component={Paintings} />
         <Route exact path='/Artist' component={Artist} />
+        
       </Switch>
 
     </Router>
