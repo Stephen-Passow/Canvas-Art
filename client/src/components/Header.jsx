@@ -6,8 +6,8 @@ export default class Header extends Component {
     render() {
         return (
             <div>
-
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                
+                <Navbar fixed='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
                     <Navbar.Brand href="#home">Art by Leidy</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
