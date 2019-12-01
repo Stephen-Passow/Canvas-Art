@@ -33,10 +33,10 @@ export default class HomePage extends Component {
                         </div>
                     )
                 })}
-                <Link to ="/Artist"><button>
+                {/* <Link to ="/Artist"><button>
                     Meet the Artist!
                     </button>
-                    </Link>
+                    </Link> */}
             </div>
         )
     }
