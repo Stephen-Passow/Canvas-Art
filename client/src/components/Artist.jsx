@@ -27,9 +27,11 @@ export default class Artist extends Component {
                 </p>
                 <br></br>
                 <h4>Connect with me!</h4>
-                <form className="contactForm" onChange={this.addNewEmail}>
+                <form className="contactForm">
                     <input type="email" placeholder="Email Address" />
+                <button onChange={this.addNewEmail}>Submit</button>
                 </form>
+                <br></br>
             </div>
         )
     }
