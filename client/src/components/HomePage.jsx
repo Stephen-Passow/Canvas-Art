@@ -16,7 +16,6 @@ export default class HomePage extends Component {
     }
     render() {
         return (
-            
             <div className="App">
                 <h1>Art Gallery</h1>
                 {this.state.paintings.map((painting) => {
@@ -27,17 +26,13 @@ export default class HomePage extends Component {
                             <h3>{painting.name}</h3>
 
                             <Link to={paintingLink}>
-                                 <img className="images" src={painting.image} 
-                                  /> 
-                                  </Link>
+                                <img className="images" alt="" src={painting.image}
+                                />
+                            </Link>
 
                         </div>
                     )
                 })}
-                {/* <Link to ="/Artist"><button>
-                    Meet the Artist!
-                    </button>
-                    </Link> */}
             </div>
         )
     }

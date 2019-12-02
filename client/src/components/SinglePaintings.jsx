@@ -25,7 +25,7 @@ export default class SinglePaintings extends Component {
                 <br></br>
                 <h3>{description}</h3>
                 <br></br>
-                <img className="images"
+                <img className="images" alt=""
                     src={image}>
                 </img>
                 <br></br>

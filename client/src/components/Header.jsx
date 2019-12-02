@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { Navbar, Nav, NavItem, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import BlackAndWhiteCategory from './components/BlackAndWhiteCategory'
-//import ColorCategory from './ColorCategory'
 
 export default class Header extends Component {
     render() {
