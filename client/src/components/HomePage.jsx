@@ -18,7 +18,7 @@ export default class HomePage extends Component {
         return (
             
             <div className="App">
-
+                <h1>Canvas Art by Leidy!</h1>
                 {this.state.paintings.map((painting) => {
                     const paintingLink = `/paintings/${painting.id}`
                     return (
