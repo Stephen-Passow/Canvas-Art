@@ -12,7 +12,7 @@ export default class SinglePaintings extends Component {
     }
 
     componentDidMount() {
-        const paintingId = this.props.match.params.paintingId
+        const paintingId = this.props.match.params.id
         axios.get(`/api/v1/painting/${paintingId}`)
             .then((res) => {
                 this.setState(res.data)
@@ -21,12 +21,18 @@ export default class SinglePaintings extends Component {
     render() {
         const { name, description, image, category } = this.state
         return (
-            <div>
+            <div className="singlePainting">
                 <h1>{name}</h1>
-                <h4>{description}</h4>
-                <p>{image}</p>
-                <p>{category}</p>
+                <br></br>
+                <h3>{description}</h3>
+                <br></br>
+                <img className="images"
+                    src={image}>
+                </img>
+                <br></br>
+                <br></br>
             </div>
+
         )
     }
 }

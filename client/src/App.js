@@ -19,6 +19,7 @@ function App() {
         <Route exact path='/' component={HomePage} />
         <Route exact path='/paintings/:id' component={SinglePaintings} />
         <Route exact path='/Artist' component={Artist} />
+        <Route exact path ='/Pricing' component={Pricing} />
         
       </Switch>
 

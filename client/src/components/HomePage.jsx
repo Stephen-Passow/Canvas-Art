@@ -20,12 +20,13 @@ export default class HomePage extends Component {
             <div className="App">
 
                 {this.state.paintings.map((painting) => {
+                    const paintingLink = `/paintings/${painting.id}`
                     return (
                         <div key={painting.id}>
 
                             <h2>{painting.name}</h2>
 
-                            <Link to="/Artist">
+                            <Link to={paintingLink}>
                                  <img className="images" src={painting.image} 
                                   /> 
                                   </Link>

@@ -1,4 +1,4 @@
-.App, .artistPage {
+.App, .artistPage, .singlePainting, .pricing {
   text-align: center;
   background: url(https://github.com/Stephen-Passow/Canvas-Art/blob/master/client/images/sketching-background.jpg?raw=true) no-repeat;
   background-color: rgba(255,255,255,0.75);

@@ -15,7 +15,7 @@ export default class Header extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                             {/* <Nav.Link href="#features">Features</Nav.Link> */}
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                            <Nav.Link href="/pricing">Pricing</Nav.Link>
                             <NavDropdown title="Categories" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="/">Black and White</NavDropdown.Item>
                                 <NavDropdown.Item href="/">Color</NavDropdown.Item>
