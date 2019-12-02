@@ -18,13 +18,13 @@ export default class HomePage extends Component {
         return (
             
             <div className="App">
-                <h1>Canvas Art by Leidy!</h1>
+                <h1>Art Gallery</h1>
                 {this.state.paintings.map((painting) => {
                     const paintingLink = `/paintings/${painting.id}`
                     return (
                         <div key={painting.id}>
 
-                            <h2>{painting.name}</h2>
+                            <h3>{painting.name}</h3>
 
                             <Link to={paintingLink}>
                                  <img className="images" src={painting.image} 
