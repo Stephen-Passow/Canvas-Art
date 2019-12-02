@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
 
 
 export default class SinglePaintings extends Component {
@@ -19,7 +18,7 @@ export default class SinglePaintings extends Component {
             })
     }
     render() {
-        const { name, description, image, category } = this.state
+        const { name, description, image } = this.state
         return (
             <div className="singlePainting">
                 <h1>{name}</h1>

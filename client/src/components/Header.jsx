@@ -26,7 +26,7 @@ export default class Header extends Component {
                         </Nav>
                         <Nav>
                             {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
-                            <Nav.Link eventKey={2} href="/Artist">Contact Me
+                            <Nav.Link eventKey={2} href="/Artist">About the Artist
       </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
