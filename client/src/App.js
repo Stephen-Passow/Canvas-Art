@@ -5,7 +5,8 @@ import axios from 'axios'
 import HomePage from './components/HomePage';
 import SinglePaintings from './components/SinglePaintings';
 import Artist from './components/Artist';
-import Header from './components/Header'
+import Header from './components/Header';
+import Pricing from './components/Pricing';
 
 
 
